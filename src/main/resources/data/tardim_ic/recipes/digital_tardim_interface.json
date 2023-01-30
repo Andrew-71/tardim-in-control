@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GGG",
+    "R0R",
+    "GRG"
+  ],
+  "key": {
+    "G": {
+      "item": "minecraft:gold_ingot",
+      "count": 1
+    },
+    "R": {
+      "item": "minecraft:redstone",
+      "count": 1
+    },
+        "0": {
+            "item": "minecraft:ender_eye",
+            "count": 1
+        }
+    },
+    "result": {
+        "item": "tardim_ic:digital_tardim_interface",
+        "count": 1
+    }
+}
