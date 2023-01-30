@@ -5,7 +5,7 @@ This mod is an addon for the [TARDIM mod](https://modrinth.com/mod/tardim), and 
 
 ### How to use
 * Place the Digital Interface peripheral inside your TARDIM.
-* Connect a computer to the peripheral using a wired modem and wrap it with `peripheral.wrap()`.
+* Connect a computer to the peripheral using a wired modem and wrap it with `peripheral.wrap`/`peripheral.find`.
 * Call one of the many methods available to you!
 
 All the methods can be found in the [Javadoc](http://andrey71.me/TARDIM-ic-docs/su/a71/tardim_ic/tardim_ic/DigitalInterfacePeripheral.html)
@@ -37,9 +37,6 @@ If you would like to use this mod but the version you want is missing I would su
 **Why are the methods to make the TARDIM travel missing?**
 : Implementing these, as well as the `locateBiome` method, would require me to have access to TARDIM mod's source code,
 which the developers keep private. If I ever get access to source of the related commands I will add these methods.
-
-**Why is the source code not linoed?**
-: I would love to open the code and intend to at some point, however I am new to mod making, so I want to first ensure the quality of the mod and the source code.
 
 **Will there be a 1.19.3 version and beyond?**
 : Yes, I will try my best to update to later versions as soon as ComputerCraft: Tweaked and TARDIM receive stable versions for them.
