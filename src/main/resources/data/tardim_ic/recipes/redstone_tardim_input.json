@@ -1,8 +1,8 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "DDD",
-    "R0R",
+    "GRG",
+    "RBR",
     "GRG"
   ],
   "key": {
@@ -14,17 +14,13 @@
       "item": "minecraft:redstone",
       "count": 1
     },
-    "0": {
-      "item": "minecraft:ender_eye",
+    "B": {
+      "item": "minecraft:redstone_block",
       "count": 1
-    },
-    "D": {
-      "item": "minecraft:polished_deepslate",
-        "count": 1
     }
   },
   "result": {
-    "item": "tardim_ic:digital_tardim_interface",
+    "item": "tardim_ic:redstone_tardim_input",
     "count": 1
   }
 }

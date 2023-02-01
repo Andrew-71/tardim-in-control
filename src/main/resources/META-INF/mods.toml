@@ -5,7 +5,7 @@ license = "All rights reserved"
 [[mods]] #mandatory
 # The modid of the mod
 modId = "tardim_ic" #mandatory
-version = "1.0" #mandatory
+version = "0.8" #mandatory
 # A display name for the mod
 displayName = "TARDIM: In Control" #mandatory
 # The description text for the mod (multi line!) (#mandatory)
@@ -13,7 +13,7 @@ description = '''
     All of time and space, now automated. Control your TARDIM using ComputerCraft: Tweaked.
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
-[[dependencies.cctutorial]] #optional
+[[dependencies.tardim_ic]] #optional
 # the modid of the dependency
 modId = "forge" #mandatory
 # Does this dependency have to exist - if not, ordering below must be specified
@@ -25,13 +25,13 @@ ordering = "NONE"
 # Side this dependency is applied on - BOTH, CLIENT or SERVER
 side = "BOTH"
 # Here's another dependency
-[[dependencies.advancedperipherals]]
+[[dependencies.tardim_ic]]
 modId = "computercraft"
 mandatory = true
 versionRange = "1.95.3"
 ordering = "NONE"
 side = "BOTH"
-[[dependencies.cctutorial]]
+[[dependencies.tardim_ic]]
 modId = "minecraft"
 mandatory = true
 # This version range declares a minimum of the current minecraft version up to but not including the next major version

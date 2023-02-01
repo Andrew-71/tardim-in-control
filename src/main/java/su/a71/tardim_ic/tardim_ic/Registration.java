@@ -13,6 +13,11 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
+import su.a71.tardim_ic.tardim_ic.digital_interface.DigitalInterfaceBlock;
+import su.a71.tardim_ic.tardim_ic.digital_interface.DigitalInterfaceTileEntity;
+import su.a71.tardim_ic.tardim_ic.redsone_input.RedstoneInputBlock;
+import su.a71.tardim_ic.tardim_ic.redsone_input.RedstoneInputTileEntity;
+
 import java.util.function.Supplier;
 
 public class Registration {
@@ -29,16 +34,17 @@ public class Registration {
     };
 
     // Blocks
-    public static final RegistryObject<Block> DIGITAL_TARDIM_INTERFACE = register("digital_tardim_interface", DigitalInterfaceBlock::new);
-
     private static <T extends Block> RegistryObject<T> register(String name, Supplier<T> block) {
         RegistryObject<T> registryObject = BLOCKS.register(name, block);
         ITEMS.register(name, () -> new BlockItem(registryObject.get(), new Item.Properties().tab(TARDIM_IC_TAB)));
         return registryObject;
     }
+    public static final RegistryObject<Block> DIGITAL_TARDIM_INTERFACE = register("digital_tardim_interface", DigitalInterfaceBlock::new);
+    public static final RegistryObject<Block> REDSTONE_TARDIM_INPUT = register("redstone_tardim_input", RedstoneInputBlock::new);
 
     // Tile Entities
     public static final RegistryObject<BlockEntityType<DigitalInterfaceTileEntity>> DIGITAL_TARDIM_INTERFACE_TILEENTITY = Registration.BLOCK_ENTITIES.register("digital_tardim_interface", () -> new BlockEntityType<>(DigitalInterfaceTileEntity::new, Sets.newHashSet(DIGITAL_TARDIM_INTERFACE.get()), null));
+    public static final RegistryObject<BlockEntityType<RedstoneInputTileEntity>> REDSTONE_TARDIM_INPUT_TILEENTITY = Registration.BLOCK_ENTITIES.register("redstone_tardim_input", () -> new BlockEntityType<>(RedstoneInputTileEntity::new, Sets.newHashSet(REDSTONE_TARDIM_INPUT.get()), null));
 
     // Register our stuff
     public static void register() {

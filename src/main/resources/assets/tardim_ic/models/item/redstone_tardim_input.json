@@ -1,5 +1,5 @@
 {
-  "parent": "tardim_ic:block/digital_tardim_interface",
+  "parent": "tardim_ic:block/redstone_tardim_input",
   "display": {
     "thirdperson_righthand": {
       "rotation": [ 75, 45, 0 ],
